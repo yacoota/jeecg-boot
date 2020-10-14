@@ -1,0 +1,8 @@
+dependencies {
+    compile project(':jeecg-boot-base-api:jeecg-system-local-api')
+    compile project(':jeecg-boot-base-common')
+
+    implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery"
+    implementation "org.springframework.cloud:spring-cloud-starter-openfeign"
+    implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-sentinel"
+}

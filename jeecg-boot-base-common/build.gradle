@@ -1,0 +1,3 @@
+dependencies {
+    compile project(':jeecg-boot-base-api:jeecg-system-local-api')
+}

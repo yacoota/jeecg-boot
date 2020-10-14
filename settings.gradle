@@ -1,0 +1,15 @@
+rootProject.name = 'jeecg-boot'
+
+include 'jeecg-boot-base-api'
+include 'jeecg-boot-base-common'
+include 'jeecg-boot-module-demo'
+include 'jeecg-boot-module-system'
+include 'jeecg-cloud-module'
+include 'jeecg-boot-base-api:jeecg-system-local-api'
+include 'jeecg-boot-base-api:jeecg-system-cloud-api'
+include 'jeecg-cloud-module:jeecg-cloud-gateway'
+
+findProject(':jeecg-boot-base-api:jeecg-system-local-api')?.name = 'jeecg-system-local-api'
+findProject(':jeecg-boot-base-api:jeecg-system-cloud-api')?.name = 'jeecg-system-cloud-api'
+findProject(':jeecg-cloud-module:jeecg-cloud-gateway')?.name = 'jeecg-cloud-gateway'
+

@@ -1,0 +1,5 @@
+dependencies {
+    compile project(':jeecg-boot-base-api:jeecg-system-local-api')
+    compile project(':jeecg-boot-base-api:jeecg-system-cloud-api')
+    compile project(':jeecg-boot-base-common')
+}
